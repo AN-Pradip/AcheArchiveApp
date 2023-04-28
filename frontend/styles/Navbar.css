@@ -1,0 +1,24 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    -webkit-text-stroke: 1px #FFFFFF;
+}
+nav > button {
+    background-color: #F7A665;
+    border: none;
+    padding: 1%;
+    border-radius: 0.2rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    font-weight: 800;
+}
+nav > button:hover{
+    background-color: #D9D9D9;
+    color: #5DBFC5;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
