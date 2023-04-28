@@ -1,0 +1,91 @@
+.human-body {
+    width: 207px;
+    position: relative;
+    padding-top: 240px;
+    height: 260px;
+    display: block;
+    margin: 40px auto;
+}
+
+.human-body svg:hover {
+    cursor: pointer;
+}
+
+.human-body svg:hover path {
+    fill: #ff7d16;
+}
+
+.human-body svg {
+    position: absolute;
+    left: 50%;
+    fill: #57c9d5;
+}
+
+.human-body svg#front-head {
+    margin-left: -28.5px;
+    top: -6px;
+}
+
+.human-body svg#front-left-shoulder {
+    margin-left: -53.5px;
+    top: 69px;
+}
+
+.human-body svg#front-right-shoulder {
+    margin-left: 13.5px;
+    top: 69px;
+}
+
+.human-body svg#front-left-arm {
+    margin-left: -78px;
+    top: 112px;
+}
+
+.human-body svg#front-right-arm {
+    margin-left: 38px;
+    top: 112px;
+    z-index: 10001;
+}
+
+.human-body svg#front-chest {
+    margin-left: -43.5px;
+    top: 88px;
+}
+
+.human-body svg#front-stomach {
+    margin-left: -37.5px;
+    top: 130px;
+}
+
+.human-body svg#front-left-leg {
+    margin-left: -46.5px;
+    top: 205px;
+    z-index: 9999;
+}
+
+.human-body svg#front-right-leg {
+    margin-left: 1.5px;
+    top: 205px;
+    z-index: 9999;
+}
+
+.human-body svg#front-left-hand {
+    margin-left: -102.5px;
+    top: 224px;
+}
+
+.human-body svg#front-right-hand {
+    margin-left: 66.5px;
+    top: 224px;
+    z-index: 10000;
+}
+
+.human-body svg#front-left-foot {
+    margin-left: -35.5px;
+    top: 455px;
+}
+
+.human-body svg#front-right-foot {
+    margin-left: 5.5px;
+    top: 455px;
+}
