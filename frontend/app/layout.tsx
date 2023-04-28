@@ -3,6 +3,7 @@ import { Gruppo } from 'next/font/google'
 import Link from 'next/link'
 import "../styles/Navbar.css"
 import "../styles/global.css"
+import "../styles/Footer.css"
 
 const k2d = K2D({ 
   weight: ['400', '600', '700', '800'],
@@ -26,13 +27,16 @@ export default function RootLayout({
   return (
     <html lang="en" className={k2d.className}>
       <body >
-        <nav>
-          <Link href="/">
-            <h1 className={gruppo.className}>AcheArchive</h1>
-          </Link>
-          <button > Check your archive / Login </button>
-        </nav>
-        {children}
+        <div className='MainContainer'>
+          <nav>
+            <Link href="/">
+              <h1 className={gruppo.className}>AcheArchive</h1>
+            </Link>
+            <button > Check your archive / Login </button>
+          </nav>
+          {children}
+        </div>
+        <footer> © 2023 Pradip ANANDA, Tous droits réservés. </footer>
       </body>
     </html>
   )
