@@ -3,8 +3,11 @@ import dotenv from "dotenv";
 import routes from "./routes"
 
 dotenv.config();
-
+const cors = require('cors')
 const app = express();
+app.use(cors({
+    origin: "*",
+}))
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 app.use(routes);

@@ -34,6 +34,7 @@ userRouter.post('/login', (req, res) => {
                     message: "User doesn't exist"
                 });
             }
+            console.log(row[0].Password);
             const hashedPwd = row[0].Password;
             bcrypt_1.default.compare(req.body.Password, hashedPwd, (err, result) => {
                 //If error when comparing
@@ -51,7 +52,7 @@ userRouter.post('/login', (req, res) => {
                         success: result,
                         statusCode: 200,
                         message: "Right password",
-                        token: { token: (0, token_generate_1.default)(req.body.FName) }
+                        data: { token: (0, token_generate_1.default)(req.body.FName) }
                     });
                 }
                 else {

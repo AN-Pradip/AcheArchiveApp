@@ -11,7 +11,6 @@ userRouter.get('/', (req: Request, res: Response) => {
 })
 
 userRouter.post('/login', (req: Request, res: Response) => {
-
     pool.getConnection( (err: any, conn: any) => {
         //If connection error
         if (err){
@@ -34,6 +33,7 @@ userRouter.post('/login', (req: Request, res: Response) => {
                     message: "User doesn't exist"
                 })
             }
+            console.log(row[0].Password)
             const hashedPwd = row[0].Password;
             bcrypt.compare(req.body.Password, hashedPwd, (err: any, result: any) => {
                 //If error when comparing

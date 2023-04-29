@@ -1,3 +1,5 @@
+'use client';
+
 import { K2D } from 'next/font/google'
 import { Gruppo } from 'next/font/google'
 import Link from 'next/link'
@@ -32,7 +34,7 @@ export default function RootLayout({
             <Link href="/">
               <h1 className={gruppo.className}>AcheArchive</h1>
             </Link>
-            <button > Check your archive / Login </button>
+            <button id="loginButton"> Check your archive / Login </button>
           </nav>
           {children}
         </div>
